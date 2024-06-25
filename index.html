@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Primary Meta Tags -->
+  
+  <title>Aluraflix - DiaF </title>
+  <meta name="title" content="Aluraflix - Dia 5">
+  <meta name="description" content="Adicione e remova filmes!">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Adicione e remova filmes!">
+  <meta property="og:image" content="https://i.imgur.com/S9bEPVa.png">
+
+  
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Aluraflix - Dia 25">
+  <meta property="twitter:description" content="Adicione e remova filmes!">
+  <meta property="twitter:image" content="https://i.imgur.com/S9bEPVa.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+    <script src="https://kit.fontawesome.com/ea1ca186af.js" crossorigin="anonymous"></script>
+  
+  
+</head>
+
+  
+</body>
+</html>
+
+
+<body>
+  <nav class="navbar">
+    <div class="nav-content">
+      <img src="assets/img/aluraflix-logo.png" alt="Aluraflix logo" id="start">
+      <a href="#start">Início</a>
+      <a href="#series">Séries</a>
+      <a href="#movies-section">Filmes</a>
+      <a href="#my-list">Minha lista</a>
+
+    </div>
+    <div class="user-account">
+
+      <i class="fas fa-search"></i>
+      <p>Infantil</p>
+      <i class="fas fa-bell"></i>
+
+      <img src="assets/img/Netflix-avatar.png" alt="User Icon">
+    </div>
+  </nav>
+  <section class="featured-movie">
+    <div class="dark-gradient"></div>
+    <video autoplay loop class="demon-trailer" id="movie-trailer">
+      <source src="assets/video/trailer-demon.mp4">
+    </video>
+    <div class="trailer-about">
+      <div class="trailer-logo">
+        <img src="assets/img/demon-slayer-logo.png" alt="Logo do trailer">
+      </div>
+      <p class="genre">Animação • Ação • Aventura • Fantasia</p>
+      <div class="description-trailer">
+        <p>Demônios massacraram sua família e amaldiçoaram sua irmã. Agora Tanjiro inicia sua jornada para encontrar a
+          cura e se vingar.</p>
+        
+      </div>
+      <div class="buttons-trailer">
+        <button class="btn-play"><i class="fas fa-play"></i>Assistir</button>
+        <button class="btn-more-information"><i class="fas fa-info-circle"></i>Mais Informações</button>
+        
+      </div>
+    </div>
+
+  </section>
+  <section class="series" id="series">
+    <div class="items-wrapper">
+      <h2 class="recomendation">Séries:</h2>
+      <div class="items" id="items-series">
+      </div>
+    </div>
+  </section>
+  <section id="movies-section">
+    <div class="items-wrapper">
+      <h2 class="recomendation">Filmes:</h2>
+      <div class="items" id="items-movies">
+        
+      </div>
+    </div>
+  </section>
+  <section id="my-list">
+    <div class="items-wrapper">
+      <h2 class="recomendation">Minha Lista:</h2>
+      <div id="user-movies" class="user-movies">
+
+      </div>
+    </div>
+  </section>
+  <div class="form-wrapper">
+    <input type="text" id="filme" name="filme" placeholder="Insira endereço de imagem">
+    <button onClick="addMovie()">Adicionar um Filme</button>
+    <button onClick="removeMovie()">Remova um Filme</button>
+  </div>
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+  </a>
+  <script src="js/script.js"></script>
+</body>
+
+
+</html>
